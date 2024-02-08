@@ -28,5 +28,3 @@ shows_df = pd.DataFrame({
 })
 
 
-# use pandas to create a bar chart from the DataFrame  
-shows_df.plot(kind="bar", x="title", y="rating", color="red")
