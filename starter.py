@@ -26,3 +26,7 @@ shows_df = pd.DataFrame({
     "title": titles,
     "rating": ratings
 })
+
+
+# use pandas to create a bar chart from the DataFrame  
+shows_df.plot(kind="bar", x="title", y="rating", color="red")
