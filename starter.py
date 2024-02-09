@@ -22,8 +22,11 @@ for show in tv_shows:
     ratings.append(response[0]['show']['rating']['average'])
 
 # create DataFrame
-shows_df = pd.DataFrame({
+shows_df2 = pd.DataFrame({
     "title": titles,
     "rating": ratings
 })
+
+# create a pandas bar chart from the DataFrame
+shows_df2.plot(kind="bar", x="title", y="rating", legend=False)
 
