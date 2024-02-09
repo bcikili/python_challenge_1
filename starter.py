@@ -27,5 +27,8 @@ shows_df = pd.DataFrame({
     "rating": ratings
 })
 
+#create pandas bar plot
+shows_df.plot(kind="bar", x="title", y="rating", legend=False)
+
 
 
